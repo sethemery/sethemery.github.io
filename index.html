@@ -6,21 +6,14 @@
     </title>
   </head>
   <body>
-    <button id="name">Name</button>
-    <button id="city">City</button>
-    <p>
-    Your Name is <span id="outputName">____</span>. The city in which you live is <span id="outputCity">____</span>.
-    </p>
     <script>
-    document.getElementById("name").onclick = function(){
-	  var name = prompt("Enter your name");
-    document.getElementById("outputName").innerText = name;
-    }
+	var mthBill = readLine("What month will this bill be paid?");
+	var ttlBill = readFloat("What is the total bill for the month? ");
+	var aleada01Bill = readFloat("What are Aleada's charges for the month for 570-847-8859? ");
 
-    document.getElementById("city").onclick = function(){
-	  var city = prompt("Enter your city");
-    document.getElementById("outputCity").innerText = city;
-    }
+	println(mthBill);
+	println(ttlBill);
+	println(aleada01Bill);
     </script>
   </body>
 </html>
