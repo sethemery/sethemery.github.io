@@ -13,7 +13,8 @@ Your Name is <span id="outputmnthBill">____</span>. The city in which you live i
 <script>
 document.getElementById("mnthBill").onclick = function(){
 	var mnthBill = prompt("Enter the month that the Verizon bill will be paid");
-  document.getElementById("outputName").innerText = mnthBill + "8th, 2022";
+	mnthBill = mnthBill + " 8th, 2022"
+  document.getElementById("outputName").innerText = mnthBill;
 }
 
 document.getElementById("ttlBill").onclick = function(){
