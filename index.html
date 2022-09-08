@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>
-      Learning javascript
-    </title>
-  </head>
-  <body>
-    <script>
-	var mthBill = readLine("What month will this bill be paid?");
-	//var ttlBill = readFloat("What is the total bill for the month? ");
-	//var aleada01Bill = readFloat("What are Aleada's charges for the month for 570-847-8859? ");
+<head>
+    <title>User Input</title>
+</head>
+<body>
+<button id="mnthBill">Month that Verizon bill will be paid</button>
+<button id="ttlBill">Total bill</button>
+<button id="aleada01Bill">Aleada's part of the bill</button>
+<p>
+Your Name is <span id="outputmnthBill">____</span>. The city in which you live is <span id="outputttlBill">____</span>. The city in which you live is <span id="outputaleada01Bill">____</span>.
+</p>
+<script>
+document.getElementById("mnthBill").onclick = function(){
+	var mnthBill = prompt("Enter the month that the Verizon bill will be paid");
+  document.getElementById("outputName").innerText = mnthBill + "8th, 2022";
+}
 
-	//println(mthBill);
-	//println(ttlBill);
-	//println(aleada01Bill);
-    </script>
-  </body>
+document.getElementById("ttlBill").onclick = function(){
+	var ttlBill = prompt("Enter the total bill for the month");
+  document.getElementById("outputttlBill").innerText = ttlBill;
+}
+	
+document.getElementById("aleada01Bill").onclick = function(){
+	var aleada01Bill = prompt("Enter Aleada's charges");
+  document.getElementById("outputaleada01Bill").innerText = aleada01Bill;
+}
+</script>
+</body>
 </html>
