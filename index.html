@@ -30,7 +30,8 @@ document.getElementById("ttlBill").onclick = function(){
 document.getElementById("aleada01Bill").onclick = function(){
 	var aleada01Bill = prompt("Enter Aleada's charges");
 	aleada01Bill = parseFloat(aleada01Bill).toFixed(2);
-	var aleada01aBill = 10
+	var aleada01aBill = 10;
+	aleada01aBill = parseFloat(aleada01aBill).toFixed(2);
   document.getElementById("outputaleada01Bill").innerText = aleada01Bill + aleada01aBill;
 }
 </script>
