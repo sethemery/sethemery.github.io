@@ -6,9 +6,15 @@
 <body>
 <button id="mnthBill">Month that Verizon bill will be paid</button>
 <button id="ttlBill">Total bill</button>
-<button id="aleada01Bill">Aleada's part of the bill</button>
+<button id="aleada01Bill">Aleada's extra charges</button>
 <p>
-Your Name is <span id="outputmnthBill">____</span>. The city in which you live is <span id="outputttlBill">____</span>. The city in which you live is <span id="outputaleada01Bill">____</span>.
+Your Name is <span id="outputmnthBill">____</span>.
+</p>
+<p>
+The city in which you live is <span id="outputttlBill">____</span>.
+</p>
+<p>
+The city in which you live is <span id="outputaleada01Bill">____</span>.
 </p>
 <script>
 document.getElementById("mnthBill").onclick = function(){
@@ -23,7 +29,7 @@ document.getElementById("ttlBill").onclick = function(){
 	
 document.getElementById("aleada01Bill").onclick = function(){
 	var aleada01Bill = prompt("Enter Aleada's charges");
-  document.getElementById("outputaleada01Bill").innerText = aleada01Bill;
+  document.getElementById("outputaleada01Bill").innerText = aleada01Bill + 10;
 }
 </script>
 </body>
