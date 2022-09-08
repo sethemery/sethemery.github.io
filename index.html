@@ -14,7 +14,7 @@ Your Name is <span id="outputmnthBill">____</span>.
 The city in which you live is <span id="outputttlBill">____</span>.
 </p>
 <p>
-The city in which you live is <span id="outputaleada01Bill">____</span>.
+Aleada's charges for the month are: $<span id="outputaleada01Bill">____</span>.
 </p>
 <script>
 document.getElementById("mnthBill").onclick = function(){
@@ -30,7 +30,8 @@ document.getElementById("ttlBill").onclick = function(){
 document.getElementById("aleada01Bill").onclick = function(){
 	var aleada01Bill = prompt("Enter Aleada's charges");
 	aleada01Bill = parseFloat(aleada01Bill).toFixed(2);
-  document.getElementById("outputaleada01Bill").innerText = aleada01Bill + 10;
+	var aleada01aBill = 10
+  document.getElementById("outputaleada01Bill").innerText = aleada01Bill + aleada01aBill;
 }
 </script>
 </body>
