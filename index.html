@@ -12,14 +12,17 @@ Total Bill Amount: $<input id="ttlBill01" type="text" required>
 Aleada's extra charges: $<input id="aleada01a" type="text" required>
 <br>
 <button onclick="myFunction()">Calculate</button>
-<p id="dateBill02"></p>
-<p id="ttlBill02"></p>
-<p id="aleada01b"></p>
+<p id="dateBill03"></p>
+<p id="ttlBill03"></p>
+<p id="aleada01c"></p>
 <script>
 function myFunction() {
-	document.getElementById("dateBill02").innerHTML = "dateBill01";
-	document.getElementById("ttlBill02").innerHTML = ttlBill01;
-	document.getElementById("aleada01b").innerHTML = aleada01a;
+	const dateBill02 = document.getElementById("dateBill01");
+	const ttlBill02 = document.getElementById("ttlBill01");
+	const aleada01b = document.getElementById("aleada01a");
+	document.getElementById("dateBill03").innerHTML = dateBill02;
+	document.getElementById("ttlBill03").innerHTML = ttlBill02;
+	document.getElementById("aleada01c").innerHTML = aleada01b;
 }
 </script>
 </body>
