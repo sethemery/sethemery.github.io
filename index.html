@@ -12,12 +12,9 @@ Total Bill Amount: $<input id="ttlBill01" type="number" required>
 Aleada's extra charges: $<input id="aleada01a" type="number" required>
 <br>
 <button onclick="myFunction()">Calculate</button>
-<p>
-The total Verizon bill to be paid on <span id="dateBill02">____</span> is <span id="ttlBill02">____</span>.
-</p>
-<p>
-Aleada's charges for the month are: $<span id="aleada01b">____</span>.
-</p>
+<p id="dateBill02"></p>
+<p id="ttlBill02"></p>
+<p id="aleada01b"></p>
 <script>
 function myFunction() {
 	document.getElementById("dateBill02").innerHTML = dateBill01;
