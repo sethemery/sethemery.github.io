@@ -5,7 +5,7 @@
 </head>
 <body>
 <h2>Verizon Bill</h2>
-Month that total bill will be paid: <input id="mnthBill01" type="number" required>/08/2022
+Bill will be paid on: <input id="dateBill01" type="date" required>
 <br>
 Total Bill Amount: $<input id="ttlBill01" type="number" required>
 <br>
@@ -13,15 +13,15 @@ Aleada's extra charges: $<input id="aleada01a" type="number" required>
 <br>
 <button onclick="myFunction()">Calculate</button>
 <p>
-The total Verizon bill to be paid on <span id="mnthBill02">____</span> is <span id="ttlBill02">____</span>.
+The total Verizon bill to be paid on <span id="dateBill02">____</span> is <span id="ttlBill02">____</span>.
 </p>
 <p>
 Aleada's charges for the month are: $<span id="aleada01b">____</span>.
 </p>
 <script>
 function myFunction() {
-	document.getElementById("mnthBill02").innerHTML = mnthBill01;
-	document.getElementById("ttlBill2").innerHTML = ttlBill01;
+	document.getElementById("dateBill02").innerHTML = dateBill01;
+	document.getElementById("ttlBill02").innerHTML = ttlBill01;
 	document.getElementById("aleada01b").innerHTML = aleada01a;
 }
 </script>
