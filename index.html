@@ -9,14 +9,14 @@
 <input id="id1" type="number" min="100" max="300" required>
 <button onclick="myFunction()">OK</button>
 
-<p>If the number is less than 100 or greater than 300, an error message will be displayed.</p>
+<p>If the number is less than 10 or greater than 30, an error message will be displayed.</p>
 
 <p id="demo"></p>
 
 <script>
 function myFunction() {
   const inpObj = document.getElementById("id1");
-  document.getElementById("demo").innerHTML = "Input OK";
+  document.getElementById("demo").innerHTML = inpObj;
 } 
 </script>
 
