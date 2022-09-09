@@ -1,37 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>User Input</title>
+<title>Verizon Bill</title>
 </head>
 <body>
-<button id="mnthBill">Month that Verizon bill will be paid</button>
-<button id="ttlBill">Total bill</button>
-<button id="aleada01Bill">Aleada's extra charges</button>
+<h2>Verizon Bill</h2>
+Month that total bill will be paid: <input id="mnthBill01" type="number" required>/08/2022
+<br>
+Total Bill Amount: $<input id="ttlBill01" type="number" required>
+<br>
+Aleada's extra charges: $<input id="aleada01a" type="number" required>
+<br>
+<button onclick="myFunction()">Calculate</button>
 <p>
-The total Verizon bill to be paid on <span id="outputmnthBill">____</span> is <span id="outputttlBill">____</span>.
+The total Verizon bill to be paid on <span id="mnthBill02">____</span> is <span id="ttlBill02">____</span>.
 </p>
 <p>
-Aleada's charges for the month are: $<span id="outputaleada01Bill">____</span>.
+Aleada's charges for the month are: $<span id="aleada01b">____</span>.
 </p>
 <script>
-document.getElementById("mnthBill").onclick = function(){
-	var mnthBill = prompt("Enter the month that the Verizon bill will be paid");
-  document.getElementById("outputmnthBill").innerText = mnthBill + " 8th, 2022";
-}
-
-document.getElementById("ttlBill").onclick = function(){
-	var ttlBill = prompt("Enter the total bill for the month");
-  document.getElementById("outputttlBill").innerText = ttlBill;
-}
-	
-document.getElementById("aleada01Bill").onclick = function(){
-	var aleada01Bill = prompt("Enter Aleada's charges");
-	aleada01Bill = parseFloat(aleada01Bill);
-	var aleada01aBill = 10;
-	aleada01aBill = parseFloat(aleada01aBill);
-	var aleada01bBill = aleada01Bill + aleada01aBill
-	aleada01bBill = parseFloat(aleada01bBill);
-  document.getElementById("outputaleada01Bill").innerText = aleada01bBill;
+function myFunction() {
+	document.getElementById("mnthBill02").innerHTML = mnthBill01;
+	document.getElementById("ttlBill2").innerHTML = ttlBill01;
+	document.getElementById("aleada01b").innerHTML = aleada01a;
 }
 </script>
 </body>
