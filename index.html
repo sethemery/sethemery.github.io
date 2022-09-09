@@ -1,29 +1,24 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Verizon Bill</title>
-</head>
 <body>
-<h2>Verizon Bill</h2>
-Bill will be paid on: <input id="dateBill01" type="text" required>
-<br>
-Total Bill Amount: $<input id="ttlBill01" type="text" required>
-<br>
-Aleada's extra charges: $<input id="aleada01a" type="text" required>
-<br>
-<button onclick="myFunction()">Calculate</button>
-<p id="dateBill03"></p>
-<p id="ttlBill03"></p>
-<p id="aleada01c"></p>
+
+<h2>JavaScript Validation</h2>
+
+<p>Enter a number and click OK:</p>
+
+<input id="id1" type="number" min="100" max="300" required>
+<button onclick="myFunction()">OK</button>
+
+<p>If the number is less than 100 or greater than 300, an error message will be displayed.</p>
+
+<p id="demo"></p>
+
 <script>
 function myFunction() {
-	const dateBill02 = document.getElementById("dateBill01");
-	const ttlBill02 = document.getElementById("ttlBill01");
-	const aleada01b = document.getElementById("aleada01a");
-	document.getElementById("dateBill03").innerHTML = dateBill02;
-	document.getElementById("ttlBill03").innerHTML = ttlBill02;
-	document.getElementById("aleada01c").innerHTML = aleada01b;
-}
+  const inpObj = document.getElementById("id1");
+  document.getElementById("demo").innerHTML = "Input OK";
+} 
 </script>
+
 </body>
 </html>
