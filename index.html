@@ -34,7 +34,7 @@ Abigail's extra charges for 717-304-5054: $<input id="abigail01a" type="number" 
 Olivia's extra charges for 717-304-6713: $<input id="olivia01a" type="number" required>
 <br><br>
 <button onclick="myFunction()">Calculate</button>
-<p id="dateBill04"></p>
+<p id="dateBill05"></p>
 <p id="ttlBill03"></p>
 <p id="aleada01d"></p>
 <p id="laura01c"></p>
@@ -102,8 +102,9 @@ function myFunction() {
     seth01b = seth01b.toFixed(2);
     abigail01b = abigail01b.toFixed(2);
     olivia01b = olivia01b.toFixed(2);
-    aleada01c = "Hi Aleada. Your part of the Verizon bill that will be paid on " + dateBill03 + " is $" + aleada01b + ". Thanks!";
-    document.getElementById("dateBill04").innerHTML = dateBill03;
+    var dateBill04 = "The total amount of the Verizon Bill that will be paid on " + dateBill03 + " is $" + ttlBill02;
+    var aleada01c = "Hi Aleada. Your part of the Verizon bill that will be paid on " + dateBill03 + " is $" + aleada01b + ". Thanks!";
+    document.getElementById("dateBill05").innerHTML = dateBill04;
     document.getElementById("ttlBill03").innerHTML = ttlBill02;
     document.getElementById("aleada01d").innerHTML = aleada01c;
     document.getElementById("laura01c").innerHTML = laura01b;
