@@ -20,6 +20,7 @@ p {
 </head>
 <body>
 <h1>Verizon Bill</h1>
+<div id="inpt01">
 Bill will be paid on: <input id="dateBill01" type="date" required autofocus>
 <br><br>
 Total Bill Amount: $<input id="ttlBill01" type="number" required>
@@ -49,6 +50,7 @@ Abigail's extra charges for 717-304-5054: $<input id="abigail01a" type="number" 
 Olivia's extra charges for 717-304-6713: $<input id="olivia01a" type="number" required>
 <br><br>
 <button onclick="myFunction()">Calculate</button>
+</div>
 <p id="dateBill05"></p>
 <p id="ttlBill03"></p>
 <p id="aleada01d"></p>
@@ -154,7 +156,7 @@ function myFunction() {
     document.getElementById("abigail01d").innerHTML = abigail01c;
     document.getElementById("olivia01d").innerHTML = olivia01c;
     document.getElementById("sethandchristotal03").innerHTML = sethandchristotal02;
-    document.getElementById('dateBill01').style.display='none';
+    document.getElementById('inpt01').style.display='none';
 }
 </script>
 </body>
