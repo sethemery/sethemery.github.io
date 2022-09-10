@@ -13,7 +13,7 @@
       Email.send({
         Host: "smtp.gmail.com",
         Username: "sethemery17543@gmail.com",
-        Password: sepwd01,
+        Password: sepwd02,
         To: 'sethemery17543@gmail.com',
         From: "sethemery17543@gmail.com",
         Subject: "Sending Email using javascript",
@@ -27,11 +27,14 @@
 </head>
  
 <body>
-sp<input id="sepwd01" type="password" required>
+sp2<input id="sepwd01" type="password" required>
   <form method="post">
     <input type="button" value="Send Email"
         onclick="sendEmail()" />
   </form>
+ <script>
+  var sepwd02 = document.getElementById("sepwd01").value;
+ </script>
 </body>
  
 </html>
