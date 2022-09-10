@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -51,9 +50,9 @@ Olivia's extra charges for 717-304-6713: $<input id="olivia01a" type="number" re
 <p id="olivia01c"></p>
 <script>
 function myFunction() {
-	var dateBill02 = document.getElementById("dateBill01").value;
-	var ttlBill02 = document.getElementById("ttlBill01").value;
-	var aleada01b = document.getElementById("aleada01a").value;
+    var dateBill02 = document.getElementById("dateBill01").value;
+    var ttlBill02 = document.getElementById("ttlBill01").value;
+    var aleada01b = document.getElementById("aleada01a").value;
     var laura01b = document.getElementById("laura01a").value;
     var laura02b = document.getElementById("laura02a").value;
     var laura03b = document.getElementById("laura03a").value;
@@ -65,45 +64,45 @@ function myFunction() {
     var seth01b = document.getElementById("seth01a").value;
     var abigail01b = document.getElementById("abigail01a").value;
     var olivia01b = document.getElementById("olivia01a").value;
+    ttlBill02 = parseFloat(ttlBill02);
     aleada01b = parseFloat(aleada01b);
-    aleada01b = aleada01b + 10.00;
-    aleada01b = aleada01b.toFixed(2);
     laura01b = parseFloat(laura01b);
-    laura01b = laura01b + 10.00;
-    laura01b = laura01b.toFixed(2);
     laura02b = parseFloat(laura02b);
-    laura02b = laura02b + 10.00;
-    laura02b = laura02b.toFixed(2);
     laura03b = parseFloat(laura03b);
-    laura03b = laura03b + 10.00;
-    laura03b = laura03b.toFixed(2);
     ronnie01b = parseFloat(ronnie01b);
-    ronnie01b = ronnie01b + 10.00;
-    ronnie01b = ronnie01b.toFixed(2);
     scott01b = parseFloat(scott01b);
-    scott01b = scott01b + 10.00;
-    scott01b = scott01b.toFixed(2);
     doris01b = parseFloat(doris01b);
-    doris01b = doris01b + 10.00;
-    doris01b = doris01b.toFixed(2);
     lori01b = parseFloat(lori01b);
-    lori01b = lori01b + 10.00;
-    lori01b = lori01b.toFixed(2);
     chris01b = parseFloat(chris01b);
-    chris01b = chris01b + 10.00;
-    chris01b = chris01b.toFixed(2);
     seth01b = parseFloat(seth01b);
-    seth01b = seth01b + 10.00;
-    seth01b = seth01b.toFixed(2);
     abigail01b = parseFloat(abigail01b);
-    abigail01b = abigail01b + 10.00;
-    abigail01b = abigail01b.toFixed(2);
     olivia01b = parseFloat(olivia01b);
-    olivia01b = olivia01b + 10.00;
+    var basicBill02 = (ttlBill02 - aleada01b - laura01b - laura02b - laura03b - ronnie01b - scott01b - doris01b - lori01b - chris01b - seth01b - abigail01b - olivia01b) / 10
+    aleada01b = aleada01b - basicBill02;
+    aleada01b = aleada01b.toFixed(2);
+    laura01b = laura01b - basicBill02;
+    laura01b = laura01b.toFixed(2);
+    laura02b = laura02b - basicBill02;
+    laura02b = laura02b.toFixed(2);
+    laura03b = laura03b - basicBill02;
+    laura03b = laura03b.toFixed(2);
+    ronnie01b = ronnie01b - basicBill02;
+    ronnie01b = ronnie01b.toFixed(2);
+    scott01b = scott01b - basicBill02;
+    scott01b = scott01b.toFixed(2);
+    doris01b = doris01b - basicBill02;
+    doris01b = doris01b.toFixed(2);
+    lori01b = lori01b - basicBill02;
+    lori01b = lori01b.toFixed(2);
+    chris01b = chris01b - basicBill02;
+    chris01b = chris01b.toFixed(2);
+    seth01b = seth01b - basicBill02;
+    seth01b = seth01b.toFixed(2);
+    abigail01b = abigail01b.toFixed(2);
     olivia01b = olivia01b.toFixed(2);
-	document.getElementById("dateBill03").innerHTML = dateBill02;
-	document.getElementById("ttlBill03").innerHTML = ttlBill02;
-	document.getElementById("aleada01c").innerHTML = aleada01b;
+    document.getElementById("dateBill03").innerHTML = dateBill02;
+    document.getElementById("ttlBill03").innerHTML = ttlBill02;
+    document.getElementById("aleada01c").innerHTML = aleada01b;
     document.getElementById("laura01c").innerHTML = laura01b;
     document.getElementById("laura02c").innerHTML = laura02b;
     document.getElementById("laura03c").innerHTML = laura03b;
