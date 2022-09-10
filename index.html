@@ -1,25 +1,56 @@
 <!DOCTYPE html>
 <html>
+<head>
+<title>Verizon Bill</title>
+</head>
 <body>
-
-<h2>JavaScript Validation</h2>
-
-<p>Enter a number and click OK:</p>
-
-<input id="id1" type="number" min="100" max="300" required>
-<button onclick="myFunction()">OK</button>
-
-<p>If the number is less than 1 or greater than 39, an error message will be displayed.</p>
-
-<p id="demo"></p>
-
+<h2>Verizon Bill</h2>
+Bill will be paid on: <input id="dateBill01" type="date" required>
+<br><br>
+Total Bill Amount: $<input id="ttlBill01" type="number" required>
+<br><br>
+Aleada's extra charges for 570-847-8859: $<input id="aleada01a" type="number" required>
+<br><br>
+Laura's extra charges for 717-303-9219: $<input id="laura01a" type="number" required>
+<br><br>
+Laura's extra charges for 717-421-5907: $<input id="laura02a" type="number" required>
+<br><br>
+Laura's extra charges for 717-740-1833: $<input id="laura03a" type="number" required>
+<br><br>
+<button onclick="myFunction()">Calculate</button>
+<p id="dateBill03"></p>
+<p id="ttlBill03"></p>
+<p id="aleada01c"></p>
+<p id="laura01c"></p>
+<p id="laura02c"></p>
+<p id="laura03c"></p>
 <script>
 function myFunction() {
-  var inpObj = document.getElementById("id1");
-  let jjdf = inpObj.toString(16);
-  document.getElementById("demo").innerHTML = jjdf;
-} 
+	var dateBill02 = document.getElementById("dateBill01").value;
+	var ttlBill02 = document.getElementById("ttlBill01").value;
+	var aleada01b = document.getElementById("aleada01a").value;
+    var laura01b = document.getElementById("laura01a").value;
+    var laura02b = document.getElementById("laura02a").value;
+    var laura03b = document.getElementById("laura03a").value;
+    aleada01b = parseFloat(aleada01b);
+    aleada01b = aleada01b + 10.00;
+    aleada01b = aleada01b.toFixed(2);
+    laura01b = parseFloat(laura01b);
+    laura01b = laura01b + 10.00;
+    laura01b = laura01b.toFixed(2);
+    laura02b = parseFloat(laura02b);
+    laura02b = laura02b + 10.00;
+    laura02b = laura02b.toFixed(2);
+    laura03b = parseFloat(laura03b);
+    laura03b = laura03b + 10.00;
+    laura03b = laura03b.toFixed(2);
+	document.getElementById("dateBill03").innerHTML = dateBill02;
+	document.getElementById("ttlBill03").innerHTML = ttlBill02;
+	document.getElementById("aleada01c").innerHTML = aleada01b;
+    document.getElementById("laura01c").innerHTML = laura01b;
+    document.getElementById("laura02c").innerHTML = laura02b;
+    document.getElementById("laura03c").innerHTML = laura03b;
+}
 </script>
-
 </body>
 </html>
