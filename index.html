@@ -14,14 +14,14 @@ h1 {
 
 p {
   font-family: verdana;
-  font-size: 15px;
+  font-size: 10px;
 }
 </style>
 </head>
 <body>
 <h1>Verizon Bill</h1>
 <div id="inpt01">
-Bill will be paid on: <input id="dateBill01" type="date" required autofocus>
+Bill will be paid on: <input id="dateBill01" type="date" required>
 <br><br>
 Total Bill Amount: $<input id="ttlBill01" type="number" required>
 <br><br>
@@ -157,6 +157,7 @@ function myFunction() {
     document.getElementById("olivia01d").innerHTML = olivia01c;
     document.getElementById("sethandchristotal03").innerHTML = sethandchristotal02;
     document.getElementById('inpt01').style.display='none';
+    document.getElementById('ttlBill03').style.display='none';
 }
 </script>
 </body>
